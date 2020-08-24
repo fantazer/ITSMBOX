@@ -1,0 +1,199 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+
+.section-main
+	.section-main__icon
+		img(src="img/target.svg", alt="")
+	.header-wrap
+		.main-cont
+			.header
+				a(href="/").logo IT Expert
+				.nav
+					a(href="#").nav__el Возможности
+					a(href="#").nav__el Лицензии
+					a(href="#").nav__el Преимущества
+					a(href="#").nav__el Заявка
+					a(href="#").nav__el О компании
+	.slogan-wrap
+		.main-cont
+			.slogan
+				.slogan__title ITSM Box Creatio
+				.slogan__text Автоматизируйте процессы, связанные с оказанием ИТ-услуг
+				.slogan__get Заказать демонстрацию
+.descr-wrap
+	.main-cont
+		.descr-img
+			img(src="img/laptop.png", alt="")
+		.descr
+			.title.title--xl Почему стоит выбрать нас
+			.descr-text.text
+				p Внедрение решения позволит улучшить скорость, гибкость и эффективность работы для решения бизнес-задач в области управления услугами, автоматизации, операций и мэйнфреймов
+
+				p Решение ITSM Box Creatio, разработанное компанией IT Expert, предназначено для автоматизации процессов, связанных с оказанием ИТ-услуг, анализа этих процессов, контроля качества услуг и удовлетворенности клиентов.
+		.advant
+			.advant__el
+				.advant__el-icon
+					+icon("brain","icon")
+				.advant__el-title Надежная система
+				.advant__el-text Внедрение решения позволит улучшить скорость, гибкость и эффективность работы
+			.advant__el
+				.advant__el-icon
+					+icon("processor","icon")
+				.advant__el-title Оптимизация затрат
+				.advant__el-text Внедрение решения позволит улучшить скорость, гибкость и эффективность работы
+			.advant__el
+				.advant__el-icon
+					+icon("tech","icon")
+				.advant__el-title Легкая миграция
+				.advant__el-text Внедрение решения позволит улучшить скорость, гибкость и эффективность работы
+		.btn-row-mid
+			.btn--md.btn--mark Оставить заявку
+
+.tools-wrap
+	.main-cont
+		.section-title Возможности системы
+		.tools
+			a(href="img/1.1.1.jpg" data-fancybox="images").fancybox.tools__img
+				img(src="img/1.1.1.jpg", alt="")
+			.tools__info
+				.tools__title Управление инцидентами и запросами на обслуживание
+				.tools__text Организуйте единую точку контакта с пользователями ИТ-услуг, регистрируйте обращения, устраняйте инциденты и исполняйте запросы на обслуживание. Расставляйте приоритеты и контролируйте время исполнения в соответствии со SLA. Поставьте критические инциденты под особый контроль.
+		.tools
+			a(href="img/1.1.2.jpg" data-fancybox="images").fancybox.tools__img
+				img(src="img/1.1.2.jpg", alt="")
+			.tools__info
+				.tools__title Управление событиями
+				.tools__text Отслеживайте события в ИТ-инфраструктуре, импортируйте события из внешних систем мониторинга (Zabbix и тд.), коррелируйте и классифицируйте события. Передавайте критические инциденты под контроль управления инцидентами.
+		.tools
+			a(href="img/1.1.3.jpg" data-fancybox="images").fancybox.tools__img
+				img(src="img/1.1.3.jpg", alt="")
+			.tools__info
+				.tools__title Управление знаниями
+				.tools__text Снижайте затраты на поддержку за счет возможности повторного использования накопленных знаний как пользователями ИТ-услуг, так и ИТ-специалистами. Совершенствуйте статьи базы знаний: организуйте процедуру предварительной подготовки и согласования статей
+		.tools
+			a(href="img/1.1.4.jpg" data-fancybox="images").fancybox.tools__img
+				img(src="img/1.1.4.jpg", alt="")
+			.tools__info
+				.tools__title Управление изменениями
+				.tools__text Управляйте всеми изменениями в ИТ централизовано, анализируйте и оценивайте риски, планируйте реализацию и проводите согласования, координируйте исполнение и оценивайте результаты проведения изменений.
+		.tools
+			a(href="img/1.1.5.jpg" data-fancybox="images").fancybox.tools__img
+				img(src="img/1.1.5.jpg", alt="")
+			.tools__info
+				.tools__title Управление уровнем сервиса
+				.tools__text
+					p Определяйте цели обслуживания для контроля за достижением показателей качества ИТ-услуг, определенных в договорах на сервисной обслуживание (SLA, OLA)
+					p Осуществляйте периодический мониторинг достижения целей обслуживания с использованием контрольных точек.
+
+		.btn-row-mid
+			.btn--md.btn--mark Смотреть все возможности
+.section
+	.main-cont
+		.section-title Стоимость лицензии
+		.payment
+			.payment__el
+				.payment__title ITSM Box Creatio
+				.payment__descr cloud / on-site subscription
+				.payment__cost 86 400 <span>руб</span>
+				.payment__cost-text пользователь / год
+				.payment__get.btn--md.btn--empty Заполнить заявку
+			.payment__el
+				.payment__title ITSM Box Creatio
+				.payment__descr add-on one-time payment
+				.payment__cost 4 999 970 <span>руб</span>
+				.payment__cost-text единоразово / год
+				.payment__get.btn--md.btn--mark Заполнить заявку
+			.payment__el.payment__el--gray
+				.payment__title Условия поддержки
+				.payment__cost-text Техническая поддержка доступна в будние дни
+				.payment__cost-text с 9:00 до 18:00 <br> (GMT +03:00)
+				.payment__cost-text В стоимость входит 5 часов поддержки
+				.payment__get.btn--md.btn--empty Заполнить заявку
+
+.section
+	.about-wrap
+		.about-img
+			img(src="img/list-2.png", alt="")
+		.main-cont
+			.about
+				.about-info
+					.about-title Опыт IT Expert
+					ul.about-list
+						li Компания основана в 2002 году и до настоящего времени является лидером на рынке консалтинговых и тренинговых услуг в области управления бизнес-процессами
+						li За 15 лет компания выполнила более 350	консалтинговых и аудиторских ИТ-проектов
+						li IT Expert имеет уникальный опыт участия в программах совершенствования управления информационными и смежными технологиями в крупных российских организациях.
+						li В проектах IT Expert решает различные задачи и выполняет ключевые роли: управляет ходом программ, осуществляет независимый и авторский надзор, предоставляет ключевую экспертизу, обеспечивает направляющий консалтинг
+
+
+.section.section--mark(style="background-image:url('img/item-1.jpg')")
+	.main-cont
+		.section-title Почему ITSM Box Creatio
+		ul.why
+			li Повышение качества обслуживания.
+			li Повышение производительности.
+			li Оптимизация затрат.
+			li Обеспечение непрерывности и эффективности бизнеса.
+			li Получение полного представления о любом процессе или услуге.
+			li Предоставление оперативной информации в режиме реального времени.
+			li Консолидация неэффективных инструментов в	единую систему.
+			li Легкая миграция.
+			li Гибкая масштабируемость системы на любой стадии внедрения.
+			li Развитие и поддержка технологий на уровне мировых тенденций.
+			li Гибкие интеграционные возможности.
+			li Индивидуальная настройка системы под бизнес-задачи заказчика с помощью мастеров настройки функциональных блоков.
+
+.section
+	.main-cont
+		.order
+			.order__info
+				.order-title Свяжитесь с нами
+				.order-text Если у вас остались вопросы по лицензии, внедрению или вы хотите заказать демонстрацию системы.
+			.order__form
+				.shape
+					img(src="img/shape.svg", alt="")
+				form(action="#").order-form-el
+					.title.title--lg Форма заявки
+					.input-cont
+						.input-row
+							.input-row__title Ваше имя
+							input(type="text" placeholder="Ф.И.О." class="input")
+					.input-cont
+						.input-row
+							.input-row__title Ваше Телефон
+							input(type="text" placeholder="Введите Ваш телефон" class="input")
+					.input-cont
+						.input-row
+							.input-row__title Ваша почта
+							input(type="text" placeholder="Введите Ваш email" class="input")
+					//checkbox remember
+					.login-remember
+						.check-el
+							label.style-label.style-label--checkbox
+								input(type="checkbox").style-input
+								.style-input-element
+									+icon("checked","icon")
+								.style-input-text Я даю согласие на обработку моих персональных данных
+					input(type="submit" value="Отправить" class="btn--md btn--mark")
+
+.footer-wrap
+	.main-cont
+		.footer
+			.footer-title ITSM BOX
+			.footer-text Автоматизируйте процессы, <br> связанные с оказанием ИТ-услуг
+			a(href="tel:+7 (495) 981-57-10").footer-phone +7 (495) 981-57-10
+			a(href="mailto:info@itexpert.ru").footer-mail info@itexpert.ru
+			.soc-row
+				a(href="https://www.facebook.com/itexpert.ru?fref=ts").soc-row__el
+					+icon("soc-facebook","icon")
+				a(href="https://www.instagram.com/itexpert.ru/").soc-row__el
+					+icon("soc-instagram","icon")
+				a(href="https://www.youtube.com/ITEXPERTRU/").soc-row__el
+					+icon("soc-youtube","icon")
+			a(href="https://www.itexpert.ru/").footer-logo www.itexpert.ru
+			
+			
+	
+
+
+include ./block_html/_script.pug
