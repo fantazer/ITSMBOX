@@ -131,7 +131,7 @@ body
 .modal-content
 	+below(640px)
 		height: 100%
-		padding: 20px
+		padding: 40px 20px
 		overflow-y scroll
 		width: 95%!important
 		margin: 20px auto
@@ -196,12 +196,14 @@ body
 
 .modal-title
 	+below(768px)
-		font-size: 20px
+		font-size: 24px
 	margin-bottom: 20px
 	text-align: center
-	@extend .type--xl
+	@extend .type--lg
+	font-size: 48px
 	font-weight: 700
-
+	line-height: 1
+	color black
 .modal-text
 	+below(768px)
 		width: 100%
@@ -315,9 +317,15 @@ body
 	overflow hidden
 
 .section
+	+below(640px)
+		padding: 30px 0
 	padding: 80px 0
 .section-clear
 	padding-top: 0
+
+.section--clear-mobile
+	+below(1024px)
+		padding-top: 0
 
 .section--mark
 	bg-full()
@@ -335,6 +343,10 @@ body
 		opacity: .95
 	.section-title
 		color white
+.section--order
+	+below(1440px)
+		overflow hidden
+
 .header-wrap
 	position: absolute
 	width: 100%
@@ -349,6 +361,8 @@ body
 	@extend .type--lg
 	font-weight: 700
 .nav
+	+below(1024px)
+		display none
 	flex(between)
 	width: 50%
 	opacity: .8
@@ -358,17 +372,30 @@ body
 
 
 .descr-img
-	margin: -20% auto 80px auto
+	+below(640px)
+		margin: -140px auto 30px auto
+		width: 100%
+	margin: -10vw auto 80px auto
 	width: 80%
 .slogan
+	+below(640px)
+		margin-top: -10%
 	flex(mid)
 	fl()
 
 .slogan__title
+	+below(1024px)
+		font-size: 10vw
+	+below(640px)
+		font-size: 32px
+		text-align center
 	font-weight: 700
 	font-size: 90px
 	margin-bottom: 20px
 .slogan__text
+	+below(640px)
+		text-align center
+		line-height: 1.6
 	font-weight: 700
 	@extend .type--md
 	margin-bottom: 30px
@@ -390,10 +417,15 @@ body
 		opacity: .04
 		animation: scale 20s linear infinite
 .descr
+	+below(640px)
+		margin-bottom: 30px
 	f()
 	fl()
 	align-items center
 	margin-bottom: 80px
+	.title
+		+below(640px)
+			text-align center
 .descr-text
 	max-width 768px
 	text-align center
@@ -402,8 +434,12 @@ body
 	padding-bottom: 20px
 
 .advant
+	+below(760px)
+		display block
 	flex(between)
 .advant__el
+	+below(760px)
+		margin-bottom: 20px
 	flex(mid)
 	fl()
 .advant__el-icon
@@ -425,17 +461,29 @@ body
 	text-align center
 	line-height: 1.4
 	color $gray
-
+.tools-wrap
+	+below(640px)
+		padding-top: 30px
+	padding-top: 60px
 .tools
+	+below(768px)
+		display block
+		max-width 640px
+		margin 0 auto 30px auto
 	flex(between)
 	margin-bottom: 80px
 	&:nth-child(odd)
-		transform translateX(80px)
+		+above(1440px)
+			transform translateX(80px)
 		.tools__img
 			order 2
 			box-shadow -20px 20px 30px #e3e3e3
 
 .tools__img
+	+below(768px)
+		width: 100%
+		margin-bottom: 20px
+		display block
 	width: 45%
 	br(10px)
 	tr()
@@ -450,6 +498,8 @@ body
 		transform scale(1.03)
 
 .tools__info
+	+below(768px)
+		width: 100%
 	width: 45%
 	padding: 30px
 	background: white
@@ -464,6 +514,8 @@ body
 	line-height: 1.6
 
 .section-title
+	+below(768px)
+		margin-bottom: 30px
 	text-align center
 	margin-bottom: 80px
 	@extend .type--xl
@@ -471,8 +523,17 @@ body
 	color black
 
 .payment
-	flex(between)
+	f()
+	fw()
+	justify-content space-between
+	align-items: flex-grow
 .payment__el
+	+below(960px)
+		width: 60%
+		margin: 0 auto 20px auto
+	+below(640px)
+		width: 100%
+		padding: 30px
 	width: 30%
 	background: white
 	padding: 80px 30px
@@ -491,6 +552,8 @@ body
 	margin-bottom: 20px
 
 .payment__cost
+	+below(640px)
+		margin: 15px 0
 	@extend .type--xl
 	font-weight: 700
 	color $mark
@@ -505,9 +568,12 @@ body
 	line-height: 1.6
 	@extend .type--md
 .payment__get
-	margin-top: 40px
-
+	margin-top: auto
+	padding: 18px
+	width: 100%
 .why
+	+below(640px)
+		column-count 1
 	column-count 2
 	column-gap 60px
 	//grid-template-columns: repeat(auto-fill, minmax(12rem,1fr))
@@ -517,28 +583,47 @@ body
 		margin-bottom: 20px
 
 .order
+	+below(1024px)
+		display block
+		max-width 640px
 	flex(between)
+	margin: 0 auto
 .order__info
+	+below(1024px)
+		width: 100%
 	width: 40%
 .order-title
+	+below(768px)
+		font-size: 12vw
 	font-size: 92px
 	font-weight: 700
 	color black
 	margin-bottom: 40px
 	line-height: 1
 .order-text
+	+below(1024px)
+		margin-bottom: 40px
 	@extend .type--md
 	line-height: 1.6
 .order-form-el
+	+below(640px)
+		padding: 30px 20px
 	position relative
 	z-index 5
 	padding: 50px 40px
 	background: white
 	br(20px)
 .order__form
+	+below(1024px)
+		width: 100%
 	width: 40%
 	position relative
 .shape
+	+below(1024px)
+		top 20%
+		max-width 480px
+	+below(640px)
+		display none
 	position absolute
 	top -10%
 	left -20%
@@ -548,6 +633,11 @@ body
 .about
 	flex(between)
 .about-img
+	+below(1024px)
+		width: 100%
+		position: static
+		top 0
+		margin-bottom: 20px
 	width: 50%
 	flex(mid)
 	bg-full()
@@ -559,14 +649,20 @@ body
 .about-wrap
 	position relative
 .about-info
+	+below(1024px)
+		width: 100%
 	width: 45%
 	margin-left auto
 .about-title
+	+below(640px)
+		text-align center
 	@extend .type--xl
 	font-weight: 700
 	color black
 	margin-bottom: 30px
 .about-list
+	+below(640px)
+		padding-left: 15px
 	li
 		margin-bottom: 20px
 		line-height: 1.6
@@ -602,6 +698,8 @@ body
 	a
 		color white
 .footer-title
+	+below(640px)
+		font-size: 12vw
 	font-size: 92px
 	font-weight: 700
 	color white
@@ -620,4 +718,76 @@ body
 	display inline-block
 	margin-bottom: 20px
 
+.input-row--error
+	.error
+		margin-top: 10px
+		display block
+		margin-bottom: -10px
+		color #c51010
+		font-weight: 700
+		font-size: 12px
+	.input
+		border-color #c51010
 //.footer-logo
+
+.modal-text-true
+	font-size: 16px
+	text-align center
+	line-height: 1.4
+// slider menu
+.head-toggle
+	flex(mid)
+	cp()
+	margin-right: 10px
+	+above(1025px)
+		display: none
+	.icon
+		+below(640px)
+			size 20px
+		size 32px
+		fill white
+	.icon-close
+		display: none
+
+.head-toggle.slide-block-toggle--open
+	.icon-close
+		display: block
+	.icon-open
+		display: none
+
+.slide-block
+	position: fixed
+	top 0px // Высота шапки
+	width: 240px
+	tr(all)
+	height: 100% // Высота шапки
+	z-index 100
+	background: white
+	padding: 60px 30px
+	.icon-close
+		size 18px
+		position absolute
+		top 25px
+		right: 15px
+.slide-nav__el
+	display block
+	margin-bottom: 10px
+	font-weight: 700
+	font-size: 22px
+
+.slide-block--left
+	left 0
+	transform translateX(-100%)
+
+.slide-block--right
+	right 0
+	transform translateX(100%)
+
+.slide-block--open
+	transform translateX(0%)
+
+.modal-content--true
+	img
+		max-width 200px!important
+		margin: 0 auto 20px auto
+// slider menu === end

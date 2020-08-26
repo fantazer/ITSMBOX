@@ -180,6 +180,102 @@ $(document).ready(function () {
 	});
 	// dropdown === end
 
+	// scroll to id
+	$("a[rel='m_PageScroll2id']").mPageScroll2id({
+		highlightClass: "nav__el--active",
+		onComplete: function () {
+			$('.slide-block').removeClass('slide-block--open');
+		}
+	});
+	// scroll to id === end
+
+	//validate
+	$('.validate-form').each(function () {
+		var curentForm = $(this);
+		$(this).validate({
+			highlight: function (element) { //даем родителю класс если есть ошибка
+				$(element).parent().addClass("input-row--error");
+			},
+			unhighlight: function (element) {
+				$(element).parent().removeClass("input-row--error");
+			},
+			rules: { //правила для полей
+				name: {
+					required: true,
+				},
+				phone: {
+					required: true,
+					minlength: 5,
+				},
+				mail: {
+					required: true,
+				},
+				comment: {
+					required: true,
+					minlength: 5,
+				},
+				agree: {
+					required: true
+				}
+			},
+			messages: {
+				name: {
+					required: 'Обязательное поле',
+				},
+				phone: {
+					required: 'Обязательное поле',
+					number: 'Введите правильный номер',
+					minlength: 'Номер должен быть длиннее',
+				},
+				mail: {
+					required: 'Обязательное поле',
+				},
+				comment: {
+					required: 'Обязательное поле',
+					minlength: 'Сообщение должно быть длиннее',
+				},
+				agree: {
+					required: false,
+				}
+			},
+			submitHandler: function (form) {
+				$.ajax({ //отправка ajax
+					type: "POST",
+					url: "sender.php",
+					data: $(form).serialize(),
+					timeout: 3000,
+					success: function (data) {
+						console.log(form);
+						console.log(data);
+						initModal("trueMsg");
+						setTimeout(function () {
+							closeModal();
+							$(':input', '.validate-form') //очитска формы от данных
+								.not(':button, :submit, :reset, :hidden')
+								.val('')
+								.removeAttr('checked')
+								.removeAttr('selected')
+						}, 3000)
+					}
+				})
+			}
+		});
+	});
+	//mobile menu
+
+	// slide menu
+	$('.js-slide-block-toggle').click(function (event) {
+		var current = $(this).data("menu");
+		$(".slide-block").each(function () {
+			if ($(this).data("menu") === current) {
+				$(this).toggleClass("slide-block--open")
+			} else {
+				$(this).removeClass("slide-block--open")
+			}
+		})
+	});
+	// slide menu === end
+
 	//window.condition = {};
 	//window.condition.info = info;
 });
