@@ -436,12 +436,16 @@ body
 .advant
 	+below(760px)
 		display block
-	flex(between)
+	f()
+	justify-content space-between
 .advant__el
 	+below(760px)
 		margin-bottom: 20px
+		width: 100%
 	flex(mid)
 	fl()
+	justify-content: flex-start
+	width: 32%
 .advant__el-icon
 	size 120px
 	round()
@@ -456,6 +460,7 @@ body
 	@extend .type--lg
 	margin-bottom: 20px
 	color black
+	text-align center
 .advant__el-text
 	width: 80%
 	text-align center

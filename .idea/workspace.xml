@@ -10,53 +10,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="add style">
-      <change afterPath="$PROJECT_DIR$/app/fonts/Nunito-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/Nunito-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/Nunito-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/Nunito-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/email.svg" afterDir="false" />
+    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="deploy version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/variable/config/_btn.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_btn.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/variable/config/_typography.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_typography.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/elements.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/error-404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/error-500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/fonts/rouble-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/fonts/rouble-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/fonts/rouble-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/fonts/rouble-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/fonts/rouble-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/block_html/_script.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/block_html/_script.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/block_html/_style.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/block_html/_style.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/elements.pug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/error-404.pug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/error-500.pug" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/html/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/index.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/main.pug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/modal.pug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/index.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/index.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/modal.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/module/modal/_modal.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/module/modal/_modal.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/style-min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style-min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/vendor.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/vendor.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/elements.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/error-404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/error-500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/index.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/index.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/combined.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/combined.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/script-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/script-min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/modal.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +173,8 @@
       <workItem from="1598009546945" duration="10251000" />
       <workItem from="1598182580376" duration="1068000" />
       <workItem from="1598255990628" duration="12629000" />
-      <workItem from="1598430770418" duration="11508000" />
+      <workItem from="1598430770418" duration="11627000" />
+      <workItem from="1598869089209" duration="969000" />
     </task>
     <task id="LOCAL-00001" summary="fix browsersynk">
       <created>1515935102048</created>
@@ -549,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598274325714</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="deploy version">
+      <created>1598454067383</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1598454067383</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -590,7 +560,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="fix hrefs" />
     <MESSAGE value="fix transition" />
     <MESSAGE value="add soc icon" />
     <MESSAGE value="fix input style" />
@@ -615,17 +584,18 @@
     <MESSAGE value="fix windows config" />
     <MESSAGE value="fix styles" />
     <MESSAGE value="add style" />
-    <option name="LAST_COMMIT_MESSAGE" value="add style" />
+    <MESSAGE value="deploy version" />
+    <option name="LAST_COMMIT_MESSAGE" value="deploy version" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1488" y="302" key="#Scopes" timestamp="1595160507526">
       <screen x="-2560" y="-256" width="2560" height="1400" />
     </state>
     <state x="-1488" y="302" key="#Scopes/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1595160507526" />
-    <state x="-1753" y="-103" key="CommitChangelistDialog2" timestamp="1598274324288">
+    <state x="-1753" y="-103" key="CommitChangelistDialog2" timestamp="1598454056273">
       <screen x="-2560" y="-256" width="2560" height="1400" />
     </state>
-    <state x="-1753" y="-103" key="CommitChangelistDialog2/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1594563425482" />
+    <state x="-1753" y="-103" key="CommitChangelistDialog2/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1598454056273" />
     <state x="605" y="114" key="CommitChangelistDialog2/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@0.0.1920.1040" timestamp="1594210490240" />
     <state x="-1753" y="-103" key="CommitChangelistDialog2/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1598274324288" />
     <state x="-2174" y="-131" key="DiffContextDialog" timestamp="1595160347621">
@@ -649,10 +619,10 @@
     </state>
     <state x="-1779" y="87" key="SettingsEditor/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1590493515833" />
     <state x="-1779" y="87" key="SettingsEditor/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1598274204126" />
-    <state x="-2560" y="-256" key="Vcs.Push.Dialog.v2" timestamp="1598274354114">
+    <state x="-2560" y="-256" key="Vcs.Push.Dialog.v2" timestamp="1598454078311">
       <screen x="-2560" y="-256" width="2560" height="1400" />
     </state>
-    <state x="-2560" y="-256" key="Vcs.Push.Dialog.v2/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1594563428818" />
+    <state x="-2560" y="-256" key="Vcs.Push.Dialog.v2/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@-2560.-256.2560.1400" timestamp="1598454078311" />
     <state x="0" y="0" key="Vcs.Push.Dialog.v2/-2560.-256.2560.1400/0.0.1920.1040/1920.166.1280.984@0.0.1920.1040" timestamp="1594210493162" />
     <state x="-2560" y="-256" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1598274354114" />
     <state x="-1414" y="288" key="cloudConfig.SelfSettingsDialog" timestamp="1595160633744">

@@ -1712,10 +1712,6 @@ body {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 @media only screen and (max-width: 760px) {
   .advant {
@@ -1738,10 +1734,16 @@ body {
   -webkit-flex-flow: column;
       -ms-flex-flow: column;
           flex-flow: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 32%;
 }
 @media only screen and (max-width: 760px) {
   .advant__el {
     margin-bottom: 20px;
+    width: 100%;
   }
 }
 .advant__el-icon {
@@ -1772,6 +1774,7 @@ body {
   font-weight: 700;
   margin-bottom: 20px;
   color: #111;
+  text-align: center;
 }
 .advant__el-text {
   width: 80%;
