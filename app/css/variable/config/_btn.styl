@@ -23,7 +23,7 @@
 .btn--lg
 	@extend .btn
 	font-size 20px
-	padding 10px 30px
+	padding 20px 55px
 
 .btn--mobile
 	@extend .btn
@@ -34,13 +34,13 @@
 
 .btn--mark
 	@extend .btn
-	color white
+	color $dark
 	background $mark
 	.nav-icon
 		fill white
 	&:hover
 		background-color darken($mark,20)
-		color white!important
+		color $dark!important
 	&:active
 		background-color darken($mark,20)
 	input[type="submit"]
@@ -66,9 +66,8 @@
 
 .btn--empty
 	@extend .btn
-	border 1px solid $mark
-	background-color #ffffff
-	color $mark
+	border 2px solid $mark
+	color $dark
 	&:hover
 		color white
 		background: $mark
@@ -100,8 +99,9 @@
 	+below(640px)
 		margin: 30px 0
 	flex(mid)
-	margin: 80px 0
-
+	margin: 40px 0
+.btn-row-mid--clear
+	margin: 0
 .btn--full
 	width: 100%
 	display block

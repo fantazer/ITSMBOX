@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1039" height="1039" viewBox="0 0 1039 1039">
+  <g id="Сгруппировать_1" data-name="Сгруппировать 1" transform="translate(148)">
+    <circle id="Эллипс_1" data-name="Эллипс 1" cx="297.5" cy="297.5" r="297.5" transform="translate(64 243)" fill="rgba(220,216,255,0.12)"/>
+    <g id="Эллипс_2" data-name="Эллипс 2" transform="translate(-27 138)" fill="none" stroke="rgba(205,199,251,0.37)" stroke-width="1">
+      <circle cx="398.5" cy="398.5" r="398.5" stroke="none"/>
+      <circle cx="398.5" cy="398.5" r="398" fill="none"/>
+    </g>
+    <g id="Эллипс_3" data-name="Эллипс 3" transform="translate(-148)" fill="none" stroke="rgba(205,199,251,0.37)" stroke-width="1">
+      <circle cx="519.5" cy="519.5" r="519.5" stroke="none"/>
+      <circle cx="519.5" cy="519.5" r="519" fill="none"/>
+    </g>
+  </g>
+</svg>
