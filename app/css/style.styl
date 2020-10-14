@@ -375,6 +375,9 @@ body
 	position relative
 
 .descr-tools
+	+below(640px)
+		position: static
+		margin-top: 40px
 	position absolute
 	width: 100%
 	height: 100%
@@ -382,6 +385,13 @@ body
 	left 0
 
 .descr-tools__el
+	+below(640px)
+		position relative
+		display block
+		margin-bottom: 10px
+		left initial!important
+		right initial!important
+		box-shadow none
 	padding: 10px 30px
 	background: white
 	display inline-block
@@ -400,21 +410,33 @@ body
 		background: $mark
 		top calc(50% - 4px)
 	&:nth-child(1)
+		+below(1200px)
+			left 2%
 		left -2%
 		top 20%
 	&:nth-child(2)
+		+below(1200px)
+			left 5%
 		left -5%
 		top 40%
 	&:nth-child(3)
+		+below(1200px)
+			left 2%
 		left -2%
 		top 60%
 	&:nth-child(4)
-		right -0%
+		+below(1200px)
+			right 2%
+		right 0%
 		top 5%
 	&:nth-child(5)
+		+below(1200px)
+			right 5%
 		right -5%
 		top 25%
 	&:nth-child(6)
+		+below(1200px)
+			right 5%
 		right -5%
 		top 55%
 
@@ -423,14 +445,21 @@ body
 		margin-top: -10%
 	color $dark
 .slogan__logo
+	+below(768px)
+		width: 150px
+	+below(640px)
+		width: 200px
+		margin 0 auto 20px auto
 	width: 300px
 	margin-bottom: 20px
 .slogan__title
 	+below(1024px)
-		font-size: 10vw
+		font-size: 5vw
 	+below(640px)
-		font-size: 32px
+		width: 100%
+		font-size: 28px
 		text-align center
+		margin-bottom: 20px
 	font-weight: 700
 	font-size: 64px
 	margin-bottom: 60px
@@ -446,10 +475,19 @@ body
 	margin-bottom: 30px
 
 .slogan__get
+	+below(640px)
+		width: 100%
+		margin-bottom: 20px
+		display block
 	@extend .btn--md
 	@extend .btn--mark
 	display: inline-flex
+	text-align center
 .slogan__get-text
+	+below(640px)
+		width: 100%
+
+	text-align center
 	@extend .btn--md
 	@extend .btn--empty
 .section-main__icon
@@ -477,7 +515,7 @@ body
 .descr-text
 	max-width 768px
 	br(20px)
-	margin -40px auto 80px auto
+	margin 0px auto 80px auto
 	z-index 10
 	position relative
 	text-align center
@@ -488,6 +526,7 @@ body
 .advant
 	+below(760px)
 		display block
+		margin-bottom: 40px
 	f()
 	justify-content space-between
 	margin-bottom: 100px
@@ -586,7 +625,7 @@ body
 	+below(768px)
 		margin-bottom: 30px
 	text-align center
-	margin-bottom: 80px
+	margin-bottom: 60px
 	@extend .type--xl
 	font-weight: 700
 	color $dark
@@ -647,6 +686,7 @@ body
 .why
 	+below(640px)
 		column-count 1
+		padding: 0
 	column-count 2
 	column-gap 60px
 	//grid-template-columns: repeat(auto-fill, minmax(12rem,1fr))
@@ -667,7 +707,7 @@ body
 	width: 40%
 .order-title
 	+below(768px)
-		font-size: 12vw
+		font-size: 10vw
 	font-size: 98px
 	font-weight: 700
 	color $dark
@@ -710,16 +750,19 @@ body
 	flex(between)
 .about-img
 	+below(1024px)
-		width: 100%
+		max-width 480px
+		width: 70%
 		position: static
 		top 0
-		margin-bottom: 20px
+		margin 0 auto 40px auto
 	width: 50%
 	flex(mid)
 	bg-full()
 	position absolute
 	top -200px
 	img
+		+below(1024px)
+			width: 100%
 		max-width 900px
 .about-wrap
 	position relative
@@ -764,6 +807,8 @@ body
 		fill $dark
 
 .footer-wrap
+	+below(640px)
+		margin-top: 0
 	background: $snow
 	color $dark
 	padding: 80px 0
@@ -870,6 +915,12 @@ body
 		margin: 0 auto 20px auto
 // slider menu === end
 
+.scheme
+	width: 70%
+	margin: 40px auto
+	img
+		width: 100%
+
 .scheme__img
 	+below(768px)
 		margin-bottom 30px
@@ -886,12 +937,17 @@ body
 	fl()
 
 .platform-logo
+	+below(640px)
+		width: 100%
+		padding: 20px
 	width: 70%
 	margin-bottom: 60px
 	padding: 40px
 	border 1px solid $border-color
 	br(30px)
 	img
+		+below(640px)
+			margin-bottom: 10px
 		width: 100%
 	position relative
 .platform-descr
@@ -903,6 +959,7 @@ body
 	opacity: .04
 	top calc(100% + 20px)
 .platform-logo__sub
+	min-width 150px
 	width: 15%
 	margin: 10px 0
 	img
@@ -910,20 +967,32 @@ body
 .platform-logo__sub--sale
 	margin-left 3%
 .platform-logo__add
+	min-width 220px
 	width: 30%
 	margin-top: 80px
 	margin-left: 3%
 	margin-bottom: 40px
 .platform-logo__row
+	+below(640px)
+		flex(around)
+		width: 100%
 	flex(mid)
 	margin-bottom: 60px
 .platform-logo__item
+	+below(640px)
+		width: 100px
+		margin: 0
 	width: 140px
 	margin: 0 30px
 .platform-logo__item--sm
+	+below(640px)
+		width: 100px
 	width: 120px
 
 .platform-advant
+	+below(640px)
+		grid-template-columns: 1fr
+
 	display: grid
 	grid-gap 20px
 	grid-template-columns: repeat(3, 1fr)
@@ -950,9 +1019,13 @@ body
 	top 0
 	left -30%
 .shape-2
+	+below(640px)
+		display none
 	top 0
 	right: -30%
 .shape-3
+	+below(640px)
+		display none
 	top 10%
 	left -30%
 .shape-4
@@ -994,6 +1067,8 @@ body
 	f()
 	justify-content space-between
 .solution__title
+	+below(768px)
+		width: 35%
 	+below(640px)
 		margin-bottom: 30px
 		width: 100%
@@ -1005,7 +1080,12 @@ body
 	margin-bottom: 20px
 .solution__title-el-sub
 	color $dark
+	line-height: 1.6
 .solution__info
+	+below(1024px)
+		grid-column-gap 20px
+	+below(768px)
+		width: 60%
 	+below(640px)
 		width: 100%
 		grid-template-columns: 1fr
@@ -1017,7 +1097,7 @@ body
 	//grid-template-columns: repeat(auto-fill, minmax(12rem,1fr))
 .solution__el
 	+below(640px)
-		padding-left: 30px
+		padding: 10px 10px 10px 30px
 	br(10px)
 	display inline-block
 	//background: white
@@ -1029,7 +1109,8 @@ body
 	color $dark
 	&:before
 		+below(640px)
-			left 5px
+			left 12px
+			top 16px
 		content ''
 		size 8px
 		br(2px)
@@ -1040,7 +1121,7 @@ body
 // solution === end
 .mark-list__el
 	padding-left: 30px
-	display inline-block
+	display block
 	//background: white
 	line-height: 1.6
 	color $dark
@@ -1060,6 +1141,10 @@ body
 
 // special
 .special
+	+below(768px)
+		grid-template-columns: 1fr
+		grid-gap 0px
+		margin-bottom: 20px
 	display: grid
 	grid-gap 30px
 	grid-template-columns: repeat(2, 1fr)
@@ -1067,22 +1152,38 @@ body
 	.special__el
 		bottom: 0
 .special__el
+	+below(640px)
+		padding: 30px 20px
 	padding: 40px
 	br(10px)
 	background: white
 	margin-bottom: 30px
 .special__el-head
+	+below(640px)
+		fl()
+		align-items flex-start
 	f()
 	align-items center
 	.icon
+		+below(640px)
+			margin-right: 0
+			margin-bottom: 20px
+			size 50px
 		size 60px
 		fill $mark
 		margin-right: 20px
 	margin-bottom: 20px
 .special__el-title
+	+below(640px)
+		width: 100%
+		font-size: 18px
 	font-weight: 700
 	color $dark
 	@extend .type--lg
 	width calc(100% - 80px)
 	max-width 650px
+.special__el-content
+	p
+		&:last-child
+			margin-bottom: 0
 // special === end

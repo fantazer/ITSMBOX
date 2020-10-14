@@ -276,6 +276,15 @@ $(document).ready(function () {
 	});
 	// slide menu === end
 
+	AOS.init({
+ 	offset: 150,
+	 disable: 'mobile',
+	 disable: function () {
+			var maxWidth = 1024;
+			return window.innerWidth < maxWidth;
+		}
+	});
+
 	//window.condition = {};
 	//window.condition.info = info;
 });
