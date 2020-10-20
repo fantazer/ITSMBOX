@@ -369,21 +369,26 @@ body
 	font-weight: 700
 .nav__el
 	color $dark
-
+	tr()
+	&:hover
+		color red
 
 .descr-img
+	+below(768px)
+		width: 100%
+		max-width 480px
+		margin 0 auto 30px auto
 	position relative
-
+	width: 50%
 .descr-tools
+	+below(768px)
+		width: 100%
 	+below(640px)
-		position: static
-		margin-top: 40px
-	position absolute
-	width: 100%
-	height: 100%
-	top 0
-	left 0
-
+		column-count 1
+	width: 45%
+	column-count 2
+	.mark-list__el
+		margin-bottom: 20px
 .descr-tools__el
 	+below(640px)
 		position relative
@@ -391,81 +396,56 @@ body
 		margin-bottom: 10px
 		left initial!important
 		right initial!important
-		box-shadow none
-	padding: 10px 30px
-	background: white
-	display inline-block
 	br(30px)
-	position absolute
 	font-size: 18px
 	//border 1px solid $border-color
-	box-shadow 0px 13px 25px #7b7b7b73
 	color $dark
-	&:before
-		content ''
-		size 8px
-		position absolute
-		left 14px
-		round()
-		background: $mark
-		top calc(50% - 4px)
-	&:nth-child(1)
-		+below(1200px)
-			left 2%
-		left -2%
-		top 20%
-	&:nth-child(2)
-		+below(1200px)
-			left 5%
-		left -5%
-		top 40%
-	&:nth-child(3)
-		+below(1200px)
-			left 2%
-		left -2%
-		top 60%
-	&:nth-child(4)
-		+below(1200px)
-			right 2%
-		right 0%
-		top 5%
-	&:nth-child(5)
-		+below(1200px)
-			right 5%
-		right -5%
-		top 25%
-	&:nth-child(6)
-		+below(1200px)
-			right 5%
-		right -5%
-		top 55%
+	margin-bottom: 20px
 
 .slogan
 	+below(640px)
 		margin-top: -10%
 	color $dark
 .slogan__logo
-	+below(768px)
-		width: 150px
 	+below(640px)
-		width: 200px
 		margin 0 auto 20px auto
-	width: 300px
+		align-items center
+		justify-content: space-around
 	margin-bottom: 20px
+	f()
+	img
+		+below(640px)
+			width: 40%
+			margin-right: 0
+		margin-right: 40px
+.slogan__logo--sm
+	max-width 140px
 .slogan__title
+	+below(1380px)
+		font-size: 42px
 	+below(1024px)
 		font-size: 5vw
 	+below(640px)
 		width: 100%
 		font-size: 28px
 		text-align center
-		margin-bottom: 20px
+		margin-bottom: 40px
 	font-weight: 700
 	font-size: 64px
 	margin-bottom: 60px
 	width: 60%
 	line-height: 1.2
 	font-family:Segoe
+	position relative
+	&:before
+		+below(640px)
+			left calc(30%)
+		content ''
+		position absolute
+		width: 40%
+		height: 3px
+		background: red
+		bottom -20px
 .slogan__text
 	+below(640px)
 		text-align center
@@ -522,7 +502,11 @@ body
 	@extend .type--md
 	line-height: 1.8
 .descr-wrap
+	+below(768px)
+		fw()
 	margin-bottom: 80px
+	f()
+	justify-content space-between
 .advant
 	+below(760px)
 		display block
@@ -540,7 +524,7 @@ body
 	width: 32%
 .advant__el-icon
 	size 120px
-	round()
+	br(10px)
 	flex(mid)
 	background: $mark
 	.icon
@@ -630,7 +614,23 @@ body
 	font-weight: 700
 	color $dark
 	font-family:Segoe
+	position relative
+	&:before
+		content ""
+		width: 120px
+		height: 2px
+		background: red
+		position absolute
+		bottom -20px
+		left calc(50% - 60px)
+	img
+		max-width 150px
+		display inline-block
+		margin: 10px
 
+.section-title--img
+	flex(mid)
+	fw()
 .section-title--clear
 	margin-bottom: 40px
 
@@ -653,6 +653,7 @@ body
 	fl()
 	text-align center
 	br(20px)
+	border 2px solid $mark
 .payment__title
 	@extend .type--lg
 	font-weight: 700
@@ -670,6 +671,10 @@ body
 	font-weight: 700
 	color $dark
 	margin: 30px 0
+	background: $mark
+	padding: 30px
+	width: calc(100% + 60px)
+	transform translateX(30px)
 	span
 		opacity: .6
 		font-size: 18px
@@ -708,11 +713,11 @@ body
 .order-title
 	+below(768px)
 		font-size: 10vw
-	font-size: 98px
+	font-size: 52px
 	font-weight: 700
-	color $dark
 	margin-bottom: 40px
 	line-height: 1
+	color #e22419
 	//font-family:Segoe
 
 .order-text
@@ -763,7 +768,7 @@ body
 	img
 		+below(1024px)
 			width: 100%
-		max-width 900px
+		max-width 700px
 .about-wrap
 	position relative
 .about-info
@@ -781,12 +786,14 @@ body
 .about-list
 	+below(640px)
 		padding-left: 15px
-
 	.mark-list__el
 		margin-bottom: 20px
 		&:before
 			content ''
 			background: #719509
+	img
+		max-width 300px
+		margin-top: 30px
 .soc-row
 	f()
 	margin: 30px
@@ -826,7 +833,8 @@ body
 	font-weight: 700
 	color $dark
 	margin-bottom: 20px
-
+	img
+		width: 100%
 .footer-text
 	@extend .type--lg
 	text-align center
@@ -916,8 +924,8 @@ body
 // slider menu === end
 
 .scheme
-	width: 70%
 	margin: 40px auto
+	max-width 920px
 	img
 		width: 100%
 
@@ -935,20 +943,19 @@ body
 .platform
 	flex(mid)
 	fl()
-
+	margin-top: 70px
 .platform-logo
 	+below(640px)
 		width: 100%
 		padding: 20px
-	width: 70%
-	margin-bottom: 60px
-	padding: 40px
-	border 1px solid $border-color
+	margin-bottom: 20px
 	br(30px)
+	width: 350px
 	img
 		+below(640px)
 			margin-bottom: 10px
 		width: 100%
+		margin-bottom: 10px
 	position relative
 .platform-descr
 	text-align center
@@ -967,27 +974,33 @@ body
 .platform-logo__sub--sale
 	margin-left 3%
 .platform-logo__add
-	min-width 220px
-	width: 30%
-	margin-top: 80px
+	+below(640px)
+		width: 100%
+		min-width auto
+	min-width 320px
+	width: 40%
+	margin-top: 20px
 	margin-left: 3%
 	margin-bottom: 40px
 .platform-logo__row
 	+below(640px)
 		flex(around)
 		width: 100%
+		fl()
+		margin: 0 0 40px 0
 	flex(mid)
-	margin-bottom: 60px
+	margin: 40px 0 100px 0
+	width: 100%
 .platform-logo__item
 	+below(640px)
-		width: 100px
-		margin: 0
-	width: 140px
+		width: 80%
+		margin 20px 0
+	width: 20%
 	margin: 0 30px
 .platform-logo__item--sm
 	+below(640px)
-		width: 100px
-	width: 120px
+		width: 80%
+	width: 16%
 
 .platform-advant
 	+below(640px)
@@ -1002,14 +1015,14 @@ body
 
 .plaform-advant__item
 	padding: 20px
-	border 1px solid $border-color
+	//border 1px solid $border-color
 	flex(mid)
 	color $dark
 	font-weight: 700
 	@extend .type--md
 	text-align center
 	br(20px)
-
+	background: #C4D0DC
 .shape
 	position absolute
 .shape-wrap
@@ -1187,3 +1200,28 @@ body
 		&:last-child
 			margin-bottom: 0
 // special === end
+
+.why-text
+	max-width 900px
+	margin: 30px auto 0 auto
+	padding: 30px
+	background: white
+	br(30px)
+	p
+
+		margin-top: 0
+		position relative
+		f()
+		align-items: flex-start
+		&:last-child
+			margin-bottom: 0
+		.icon
+			+below(640px)
+				size 20px
+			size 60px
+			fill $mark
+			margin-right: 20px
+		span
+			+below(640px)
+				display inline-block
+				width calc(100% - 80px)

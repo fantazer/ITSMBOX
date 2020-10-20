@@ -8,6 +8,7 @@ include block_html/_include.pug
 			.header
 				a(href="/" data-aos="fade-right" data-aos-delay="600" data-aos-duration="1000").logo
 					img(src="img/main-logo.svg", alt="")
+
 				.nav(data-aos="fade-left" data-aos-delay="900" data-aos-duration="1000")
 					a(href="#capability" rel='m_PageScroll2id').nav__el Возможности
 					a(href="#cost" rel='m_PageScroll2id').nav__el Стоимость
@@ -46,18 +47,23 @@ include block_html/_include.pug
 		.shape.shape-1
 			img(src="img/shape-1.svg", alt="")
 		.main-cont
-			.section-title(data-aos="fade-in" data-aos-delay="300" data-aos-duration="2000") Почему стоит выбрать нас
+			.section-title(data-aos="fade-in" data-aos-delay="300" data-aos-duration="2000") Возможности системы
 			.descr-text.text(data-aos="fade-in" data-aos-delay="600" data-aos-duration="2000") Решение ITSM Box Creatio, разработанное компанией IT Expert, предназначено для автоматизации процессов, связанных с оказанием ИТ-услуг, анализа этих процессов, контроля качества услуг и удовлетворенности клиентов.
 			.descr-wrap(data-aos="flip-up" data-aos-delay="900" data-aos-duration="2000")
 				.descr-img
 					img(src="img/laptop.png", alt="")
-					.descr-tools
-						.descr-tools__el(data-aos="fade-right" data-aos-delay="900" data-aos-duration="2000") Управление инцидентами
-						.descr-tools__el(data-aos="fade-right" data-aos-delay="1100" data-aos-duration="2000") Управление событиями
-						.descr-tools__el(data-aos="fade-right" data-aos-delay="1300" data-aos-duration="2000") Управление знаниями
-						.descr-tools__el(data-aos="fade-left" data-aos-delay="1500" data-aos-duration="2000") Управление изменениями
-						.descr-tools__el(data-aos="fade-left" data-aos-delay="1700" data-aos-duration="2000") Управление уровнем сервиса
-						.descr-tools__el(data-aos="fade-left" data-aos-delay="1900" data-aos-duration="2000") Управление новостями
+				.descr-tools
+					.mark-list__el Управление инцидентами
+					.mark-list__el Управление событиями
+					.mark-list__el Управление знаниями
+					.mark-list__el Управление изменениями
+					.mark-list__el Управление уровнем сервиса
+					.mark-list__el Управление новостями
+					.mark-list__el Делегирование полномочий
+					.mark-list__el Каталог услуг
+					.mark-list__el Учет трудозатрат
+					.mark-list__el Портал пользователей
+					.mark-list__el Отчетность SSRS
 			.advant
 				.advant__el(data-aos="fade-up" data-aos-delay="300" data-aos-duration="2000")
 					.advant__el-icon
@@ -74,10 +80,10 @@ include block_html/_include.pug
 						+icon("tech","icon")
 					.advant__el-title Легкая миграция
 					.advant__el-text Организуйте единую точку контакта с пользователями ИТ-услуг, регистрируйте обращения и устраняйте инциденты.
-			.section-title(data-aos="fade-in" data-aos-delay="300" data-aos-duration="2000") Основные процессы работы
-			.scheme(data-aos="fade-in" data-aos-delay="300" data-aos-duration="2000")
+			.section-title(data-aos="fade-in" data-aos-delay="300" data-aos-duration="2000") Структура продукта
+			.scheme(data-aos="fade-in" data-aos-delay="300" data-aos-duration="1500")
 				img(src="img/scheme.png", alt="")
-			.btn-row-mid.btn-row-mid--clear(data-aos="fade-in" data-aos-delay="1500" data-aos-duration="2000")
+			//.btn-row-mid.btn-row-mid--clear(data-aos="fade-in" data-aos-delay="1500" data-aos-duration="2000")
 				a(href="/doc/doc.zip").btn--md.btn--mark Смотреть документацию
 .section.shape-wrap
 	.shape.shape-2
@@ -91,7 +97,7 @@ include block_html/_include.pug
 			.platform-logo(data-aos="fade-down" data-aos-delay="300" data-aos-duration="2000")
 				img(src="img/logo-creation.svg", alt="")
 				.platform-descr Готовые к использованию шаблоны и решения
-				.platform-logo__arrow
+				//.platform-logo__arrow
 					img(src="img/twin-arrow.svg", alt="")
 
 			.platform-logo__sub.platform-logo__sub--sale(data-aos="fade-in" data-aos-delay="600" data-aos-duration="2000")
@@ -109,12 +115,11 @@ include block_html/_include.pug
 		.platform-advant(data-aos="fade-in" data-aos-delay="1700" data-aos-duration="2000")
 			.plaform-advant__item Микросервисная архитектура
 			.plaform-advant__item Использование open-source технологий
-			.plaform-advant__item Поддержка разных субд
+			.plaform-advant__item Поддержка разных СУБД
 			.plaform-advant__item Пользовательская настройка интеграций
 			.plaform-advant__item Открытый api и возможности интеграции
 			.plaform-advant__item Визуальный редактор интерфейсов
-		.btn-row-mid(data-aos="fade-up" data-aos-delay="1300" data-aos-duration="2000")
-			a(href="#order" rel='m_PageScroll2id').btn--lg.btn--mark Заполнить заявку
+
 .shape-wrap
 	.water-text ITSMBOX
 	.shape.shape-4
@@ -167,26 +172,33 @@ include block_html/_include.pug
 				.special__el-content.text
 					p Благодаря инструментам для работы с веб-сервисами пользователь может в считанные минуты настроить параметры сервиса и сценарий получения и передачи данных в другую систему.
 					p Настройка не требует написания кода и доступна пользователям без навыков программирования.
-		.btn-row-mid.btn-row-mid--clear(data-aos="fade-in" data-aos-delay="300" data-aos-duration="2000")
-			a(href="/doc/doc.zip").btn--md.btn--mark Смотреть документацию
+
 
 
 .section.section--mark#advant(style="background-image:url('img/item-1.jpg')")
 	.main-cont
-		.section-title(data-aos="fade-in" data-aos-delay="300" data-aos-duration="2000") 10 Причин выбрать ITSM Box Creatio
+		.section-title.section-title--img(data-aos="fade-in" data-aos-delay="300" data-aos-duration="2000") 10 Причин выбрать
+			img(src="img/logo-itsm.svg", alt="")
 		ul.why(data-aos="fade-in" data-aos-delay="600" data-aos-duration="2000")
 			li.mark-list__el Повышение качества обслуживания.
 			li.mark-list__el Повышение производительности.
-			li.mark-list__el Оптимизация затрат.
 			li.mark-list__el Обеспечение непрерывности и эффективности бизнеса.
 			li.mark-list__el Получение полного представления о любом процессе или услуге.
-			li.mark-list__el Предоставление оперативной информации в режиме реального времени.
-			li.mark-list__el Консолидация неэффективных инструментов в	единую систему.
+			li.mark-list__el Оптимизация затрат.
 			li.mark-list__el Легкая миграция.
+			li.mark-list__el Предоставление оперативной информации в режиме реального времени.
 			li.mark-list__el Гибкая масштабируемость системы на любой стадии внедрения.
-			li.mark-list__el Развитие и поддержка технологий на уровне мировых тенденций.
 			li.mark-list__el Гибкие интеграционные возможности.
 			li.mark-list__el Индивидуальная настройка системы под бизнес-задачи заказчика с помощью мастеров настройки функциональных блоков.
+		.why-text.text
+			p
+				+icon("checked","icon")
+				span Внедрение решения позволит улучшить скорость, гибкость и эффективность работы для решения бизнес-задач в области управления ИТ-услугами, автоматизации, операций и мэйнфреймов.
+
+			p
+				+icon("checked","icon")
+				span Решение ITSM Box Creatio, разработанное компанией IT Expert, предназначено для автоматизации процессов, связанных с оказанием ИТ-услуг, анализа этих процессов, контроля качества услуг и удовлетворенности клиентов.
+
 
 .section.shape-wrap#cost
 	.shape.shape-2
@@ -197,23 +209,23 @@ include block_html/_include.pug
 		.section-title(data-aos="fade-in" data-aos-delay="300" data-aos-duration="2000") Стоимость лицензии
 		.payment
 			.payment__el(data-aos="zoom-out" data-aos-delay="600" data-aos-duration="1000")
-				.payment__title ITSM Box Creatio
+				//.payment__title ITSM Box Creatio
 				.payment__descr cloud / on-site subscription
 				.payment__cost 1 152 $
 				.payment__cost-text пользователь / год
-				a(href="#order" rel='m_PageScroll2id').payment__get.btn--md.btn--empty Заполнить заявку
+				//a(href="#order" rel='m_PageScroll2id').payment__get.btn--md.btn--empty Заполнить заявку
 			.payment__el(data-aos="zoom-out" data-aos-delay="1200" data-aos-duration="1000")
-				.payment__title ITSM Box Creatio
+				//.payment__title ITSM Box Creatio
 				.payment__descr add-on one-time payment
 				.payment__cost 345 609 $
 				.payment__cost-text единоразово / год
-				a(href="#order" rel='m_PageScroll2id').payment__get.btn--md.btn--mark Заполнить заявку
+				//a(href="#order" rel='m_PageScroll2id').payment__get.btn--md.btn--mark Заполнить заявку
 			.payment__el.payment__el--gray(data-aos="zoom-out" data-aos-delay="1800" data-aos-duration="1000")
-				.payment__title Условия поддержки
+				//.payment__title Условия поддержки
 				.payment__cost-text Техническая поддержка доступна в будние дни
 				.payment__cost-text с 9:00 до 18:00 <br> (GMT +03:00)
 				.payment__cost-text В стоимость входит 5 часов поддержки
-				a(href="#order" rel='m_PageScroll2id').payment__get.btn--md.btn--empty Заполнить заявку
+				//a(href="#order" rel='m_PageScroll2id').payment__get.btn--md.btn--empty Заполнить заявку
 
 
 
@@ -221,7 +233,7 @@ include block_html/_include.pug
 .section.section--extend.section--clear-mobile.section--dark#about
 	.about-wrap
 		.about-img(data-aos="fade-down-right" data-aos-delay="300" data-aos-duration="1500")
-			img(src="img/list-3.png", alt="")
+			img(src="img/list-4.png", alt="")
 		.main-cont
 			.about(data-aos="fade-in" data-aos-delay="900" data-aos-duration="2000")
 				.about-info
@@ -231,7 +243,7 @@ include block_html/_include.pug
 						.mark-list__el  За 15 лет компания выполнила более 350	консалтинговых и аудиторских ИТ-проектов
 						.mark-list__el  IT Expert имеет уникальный опыт участия в программах совершенствования управления информационными и смежными технологиями в крупных российских организациях
 						.mark-list__el  IT Expert в проектах решает различные задачи и выполняет ключевые роли: управляет ходом программ, осуществляет независимый и авторский надзор, предоставляет ключевую экспертизу, обеспечивает направляющий консалтинг
-
+						img(src="img/logo-powered.svg", alt="")
 
 .section.section--order#order
 	.main-cont
@@ -252,6 +264,10 @@ include block_html/_include.pug
 						.input-row
 							.input-row__title Ваш телефон
 							input(type="text" placeholder="Введите Ваш телефон" class="input" name="phone")
+					input-cont
+						.input-row
+							.input-row__title Ваша почта
+							input(type="text" placeholder="Введите Вашу почту" class="input" name="mail")
 					.input-cont
 						.input-row
 							.input-row__title Ваше сообщение
@@ -269,7 +285,8 @@ include block_html/_include.pug
 .footer-wrap
 	.main-cont
 		.footer
-			.footer-title(data-aos="flip-up" data-aos-delay="900" data-aos-duration="1000") ITSM BOX
+			.footer-title(data-aos="flip-up" data-aos-delay="900" data-aos-duration="1000")
+				img(src="img/logo-itsm.svg", alt="")
 			.footer-text Автоматизируйте процессы, <br> связанные с оказанием ИТ-услуг
 			a(href="tel:+7 (495) 981-57-10").footer-phone +7 (495) 981-57-10
 			a(href="mailto:info@itexpert.ru").footer-mail info@itexpert.ru
