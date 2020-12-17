@@ -1,0 +1,330 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+
+.section-main(style="background-image:url('img/banner.jpg')")
+	.header-wrap
+		.main-cont
+			.header
+				a(href="/" data-aos="fade-right" data-aos-delay="600" data-aos-duration="1000").logo
+					img(src="img/main-logo.svg", alt="")
+
+				.nav(data-aos="fade-left" data-aos-delay="900" data-aos-duration="1000")
+					a(href="#capability" rel='m_PageScroll2id').nav__el Opportunities
+					a(href="#cost" rel='m_PageScroll2id').nav__el Pricing
+					a(href="#advant" rel='m_PageScroll2id').nav__el Advantages
+					a(href="#about" rel='m_PageScroll2id').nav__el About us
+					a(href="#order" rel='m_PageScroll2id').nav__el Send a request
+				.lang
+					a(href="/").lang__el
+						img(src="img/russia.svg", alt="")
+					a(href="index-eng.html").lang__el.lang__el--active
+						img(src="img/united-kingdom.svg", alt="")
+				.head-toggle.js-slide-block-toggle(data-menu="menu")
+					+icon("menu","icon icon-open")
+	.slide-block.slide-block--right.slide-block--menu(data-menu="menu")
+		.slide-block-wrap
+			+icon("close","icon icon-close js-slide-block-toggle" )
+			.slide-nav
+				-
+					var items = [
+						{name: "Opportunities", id: "#capability"},
+						{name: "Pricing", id: "#cost"},
+						{name: "Advantages", id: "#advant"},
+						{name: "About us", id: "#about"},
+						{name: "Send a request", id: "#order"},
+					];
+				each item in items
+					a(href = item.id rel = 'm_PageScroll2id' ).slide-nav__el #{item.name}
+
+	.slogan-wrap
+		.main-cont
+			.slogan
+				.slogan__logo(data-aos="fade-in" data-aos-delay="1400" data-aos-duration="2000")
+					img(src="img/logo-itsm.svg", alt="")
+				.slogan__title(data-aos="fade-right" data-aos-delay="1800" data-aos-duration="1000") Automate IT Service Processes
+				//.slogan__text Автоматизируйте процессы, связанные с оказанием ИТ-услуг
+				a(href="/doc/app.zip" data-aos="fade-up" data-aos-delay="2200" data-aos-duration="500").slogan__get Download the demonstration
+
+				a(href="/doc/insruction-install.docx" data-aos="fade-up" data-aos-delay="2800" data-aos-duration="500").slogan__get-text Setup instruction
+
+
+.section.section--clear#capability
+	.shape-wrap
+		.shape.shape-1
+			img(src="img/shape-1.svg", alt="")
+		.main-cont
+			.section-title(data-aos="fade-in" data-aos-delay="300" data-aos-duration="2000") System capabilities
+
+			.descr-text.text(data-aos="fade-in" data-aos-delay="600" data-aos-duration="2000") The ITSM Box Creatio solution developed by IT Expert is designed to automate processes related to the provision of it services, analyze these processes, control the quality of services and customer satisfaction.
+
+			.descr-wrap(data-aos="flip-up" data-aos-delay="900" data-aos-duration="2000")
+				.descr-img
+					img(src="img/laptop.png", alt="")
+				.descr-tools
+					.mark-list__el Incident management
+					.mark-list__el Event management
+					.mark-list__el Knowledge management
+					.mark-list__el Change management
+					.mark-list__el Service level management
+					.mark-list__el News management
+					.mark-list__el Delegation of authority
+					.mark-list__el Service catalog
+					.mark-list__el Accounting for labor costs
+					.mark-list__el The user portal
+					.mark-list__el SSRS reporting
+
+			.advant
+				.advant__el(data-aos="fade-up" data-aos-delay="300" data-aos-duration="2000")
+					.advant__el-icon
+						+icon("brain","icon")
+					.advant__el-title Reliable system
+					.advant__el-text Implementation of the solution will improve the speed, flexibility and efficiency of work.
+				.advant__el(data-aos="fade-up" data-aos-delay="900" data-aos-duration="2000")
+					.advant__el-icon
+						+icon("processor","icon")
+					.advant__el-title Cost optimization
+					.advant__el-text The solution will be useful for companies that provide IT services to both internal and external users.
+				.advant__el(data-aos="fade-up" data-aos-delay="1500" data-aos-duration="2000")
+					.advant__el-icon
+						+icon("tech","icon")
+					.advant__el-title Easy migration
+					.advant__el-text Establish a single point of contact with users of IT services, register cases and resolve incidents.
+
+			.section-title(data-aos="fade-in" data-aos-delay="300" data-aos-duration="2000") Product structure
+			.scheme(data-aos="fade-in" data-aos-delay="300" data-aos-duration="1500")
+				img(src="img/sсheme-eng.png", alt="")
+			//.btn-row-mid.btn-row-mid--clear(data-aos="fade-in" data-aos-delay="1500" data-aos-duration="2000")
+				a(href="/doc/doc.zip").btn--md.btn--mark Смотреть документацию
+.section.shape-wrap
+	.shape.shape-2
+		img(src="img/shape-1.svg", alt="")
+	.shape.shape-3
+		img(src="img/shape-1.svg", alt="")
+	.main-cont
+		.section-title.section-title--clear(data-aos="fade-in" data-aos-delay="300" data-aos-duration="2000") Advantages of the Creatio platform
+		.platform
+			.platform-logo(data-aos="fade-down" data-aos-delay="300" data-aos-duration="2000")
+				img(src="img/logo-creation.svg", alt="")
+				.platform-descr Ready-to-use templates and solutions
+				//.platform-logo__arrow
+					img(src="img/twin-arrow.svg", alt="")
+
+			//.platform-logo__sub.platform-logo__sub--sale(data-aos="fade-in" data-aos-delay="600" data-aos-duration="2000")
+				img(src="img/logo-sales.svg", alt="")
+			//.platform-logo__sub(data-aos="fade-in" data-aos-delay="900" data-aos-duration="2000")
+				img(src="img/logo-marketing.svg", alt="")
+			.platform-logo-wrap(data-aos="fade-in" data-aos-delay="700" data-aos-duration="2000")
+				.platform-logo__add(data-aos="fade-in" data-aos-delay="1400" data-aos-duration="2000")
+					img(src="img/logo-service.svg", alt="")
+					span Vertically integrated products
+				.platform-logo__row
+					.platform-logo__item(data-aos="fade-right" data-aos-delay="1400" data-aos-duration="1000")
+						img(src="img/logo-itsm.svg", alt="")
+					.platform-logo__item.platform-logo__item--sm(data-aos="fade-left" data-aos-delay="1400" data-aos-duration="1000")
+						img(src="img/logo-cpi.svg", alt="")
+
+		.platform-advant(data-aos="fade-in" data-aos-delay="1700" data-aos-duration="2000")
+			.plaform-advant__item microservice architecture
+			.plaform-advant__item Using open-source technologies
+			.plaform-advant__item Support for different DBMS
+			.plaform-advant__item Customizing integrations
+			.plaform-advant__item Open API and integration features
+			.plaform-advant__item Visual interface editor
+
+.shape-wrap
+	.water-text ITSMBOX
+	.shape.shape-4
+		img(src="img/shape-2.svg", alt="")
+	.section.section--dark
+		.main-cont
+			.solution
+				.solution__title(data-aos="fade-right" data-aos-delay="600" data-aos-duration="2000")
+					.solution__title-el Main advantages of the Terrasoft Creatio
+					.solution__title-el-sub The Low-Code BPM platform allows advanced users to automate any process
+				.solution__info(data-aos="fade-left" data-aos-delay="1200" data-aos-duration="2000")
+					.solution__el Mobile app customization
+					.solution__el Package mechanism
+					.solution__el Security at all levels
+					.solution__el Scalling out and fell-safe system
+					.solution__el Seamless installation of updates
+					.solution__el Implementation of ci/cd approaches
+					.solution__el Working in the cloud and on-site
+					.solution__el Advanced tools for working with data and Analytics
+
+
+.section.shape-wrap
+	.shape.shape-5
+		img(src="img/circle.svg", alt="")
+	.shape.shape-6
+		img(src="img/shape-3.svg", alt="")
+	.main-cont
+		.section-title(data-aos="fade-in" data-aos-delay="300" data-aos-duration="2000") Features Of Terrasoft Creatio
+		.special__el(data-aos="zoom-out" data-aos-delay="600" data-aos-duration="1000")
+			.special__el-head
+				+icon("analytics","icon")
+				.special__el-title A platform for automating business processes of any complexity
+			.special__el-content
+				.mark-list__el  a full-featured workflow designer with support for BPMN notation, which makes it equally easy to automate complex structured and flexible unstructured processes;
+				.mark-list__el  a powerful execution engine allows you to perform millions of operations simultaneously;
+				.mark-list__el  visual tools for analyzing, finding bottlenecks, and optimizing processes.
+
+		.special
+			.special__el(data-aos="zoom-out" data-aos-delay="1200" data-aos-duration="1000")
+				.special__el-head
+					+icon("business","icon")
+					.special__el-title Ready-to-use templates and extensions
+				.special__el-content.text
+					p The Creatio Marketplace online platform contains hundreds of ready-made solutions with the necessary business logic, connectors, extensions, and templates for Creatio.
+					p Instead of setting up and developing an application from scratch, you can use the Marketplace to immediately get a ready-made result, speeding up the adaptation and implementation of the system at times.
+
+			.special__el(data-aos="fade-left" data-aos-delay="1600" data-aos-duration="2000")
+				.special__el-head
+					+icon("chart","icon")
+					.special__el-title Пользовательская настройка интеграций
+				.special__el-content.text
+					p Thanks to the tools for working with web services, the user can configure the service parameters and the scenario for receiving and transmitting data to another system in a few minutes.
+					p The configuration does not require writing code and is available to users without programming skills.
+
+.section.section--mark#advant(style="background-image:url('img/item-1.jpg')")
+	.main-cont
+		.section-title.section-title--img(data-aos="fade-in" data-aos-delay="300" data-aos-duration="2000") 10 reasons to choose
+			img(src="img/logo-itsm.svg", alt="")
+		ul.why(data-aos="fade-in" data-aos-delay="600" data-aos-duration="2000")
+			li.mark-list__el Improving the quality of service.
+			li.mark-list__el Increasing the productivity
+			li.mark-list__el Ensuring business continuity and efficiency.
+			li.mark-list__el Get a complete picture of any process or service.
+			li.mark-list__el Getting a complete picture of any process or service.
+			li.mark-list__el Cost optimization.
+			li.mark-list__el Easy migration.
+			li.mark-list__el Providing the latest information in real time.
+			li.mark-list__el Flexible scalability of the system at any stage of implementation.
+			li.mark-list__el Flexible integration capabilities.
+			li.mark-list__el Individual customization of the system for the customer's business tasks using wizards for setting up functional blocks.
+
+		.why-text.text
+			p
+				+icon("checked","icon")
+				span Implementation of the solution will improve the speed, flexibility and efficiency of work for solving business problems in the field of it service management, automation, operations and mainframes.
+			p
+				+icon("checked","icon")
+				span The ITSM Box Creatio solution developed by IT Expert is designed to automate processes related to the provision of it services, analyze these processes, control the quality of services and customer satisfaction.
+
+
+.section.shape-wrap#cost
+	.shape.shape-2
+		img(src="img/shape-1.svg", alt="")
+	.shape.shape-3
+		img(src="img/shape-1.svg", alt="")
+	.main-cont
+		.section-title(data-aos="fade-in" data-aos-delay="300" data-aos-duration="2000") Pricing
+		.payment
+			.payment__el(data-aos="zoom-out" data-aos-delay="600" data-aos-duration="1000")
+				//.payment__title ITSM Box Creatio
+				.payment__descr cloud / on-site subscription
+				.payment__cost 1 152 $
+				.payment__cost-text Per user per year
+
+				//a(href="#order" rel='m_PageScroll2id').payment__get.btn--md.btn--empty Заполнить заявку
+			//.payment__el(data-aos="zoom-out" data-aos-delay="1200" data-aos-duration="1000")
+				//.payment__title ITSM Box Creatio
+				.payment__descr add-on one-time payment
+				.payment__cost 345 609 $
+				.payment__cost-text One-time payment per year
+				//a(href="#order" rel='m_PageScroll2id').payment__get.btn--md.btn--mark Заполнить заявку
+			.payment__el.payment__el--gray(data-aos="zoom-out" data-aos-delay="1800" data-aos-duration="1000")
+				//.payment__title Условия поддержки
+				.payment__cost-text Technical support is available during the working days
+				.payment__cost-text с 9:00 до 18:00 <br> (GMT +03:00)
+				.payment__cost-text The price include 5 hours of technical support
+				//a(href="#order" rel='m_PageScroll2id').payment__get.btn--md.btn--empty Заполнить заявку
+
+
+
+
+.section.section--extend.section--clear-mobile.section--dark#about
+	.about-wrap
+		.about-img(data-aos="fade-down-right" data-aos-delay="300" data-aos-duration="1500")
+			img(src="img/list-4.png", alt="")
+		.main-cont
+			.about(data-aos="fade-in" data-aos-delay="900" data-aos-duration="2000")
+				.about-info
+					.about-title IT Expert experience
+					.about-list
+						.mark-list__el The company was founded in 2002 and until now is the leader in the market of consulting and training services in the field of business process management
+						.mark-list__el For 15 years, the company has completed more than 350 consulting and audit IT projects
+						.mark-list__el IT Expert has unique experience in participating in programs to improve the management of information and related technologies in large Russian organizations
+						.mark-list__el IT Expert solves various tasks in projects and performs key roles: manages the course of programs, carries out independent and field supervision, provides key expertise, provides directional consulting
+
+						img(src="img/logo-powered.svg", alt="")
+
+.section.section--order#order
+	.main-cont
+		.order
+			.order__info(data-aos="fade-in" data-aos-delay="600" data-aos-duration="2000")
+				.order-title Contact Us
+				.order-text If you have any questions about licensing, implementation or you want to see the demonstration of the system
+			.order__form
+				.shape-order(data-aos="fade-in" data-aos-delay="900" data-aos-duration="2000")
+					img(src="img/shape-3.svg", alt="")
+				form(action="javascript:void(null);" data-aos="zoom-out" data-aos-delay="1200" data-aos-duration="1000").order-form-el.validate-form.form
+					.title.title--lg Request form
+
+					.input-cont
+						.input-row
+							.input-row__title Name
+							input(type="text" placeholder="Full name" class="input" name="name")
+					.input-cont
+						.input-row
+							.input-row__title Phone
+							input(type="text" placeholder="Enter your phone" class="input" name="phone")
+					input-cont
+						.input-row
+							.input-row__title Email
+							input(type="text" placeholder="Enter your email" class="input" name="mail")
+					.input-cont
+						.input-row
+							.input-row__title Message
+							textarea(name="text", cols="30", rows="5" class="input" placeholder="Enter your message")
+					//checkbox remember
+					.login-remember
+						.check-el
+							label.style-label.style-label--checkbox
+								input(type="checkbox" name="agree").style-input
+								.style-input-element
+									+icon("checked","icon")
+								.style-input-text I consent to the processing of my personal data
+					input(type="submit" value="Send request" class="btn--md btn--mark btn--mobile")
+
+.footer-wrap
+	.main-cont
+		.footer
+			.footer-title(data-aos="flip-up" data-aos-delay="900" data-aos-duration="1000")
+				img(src="img/logo-itsm.svg", alt="")
+			.footer-text Automate IT Service Processes
+
+			a(href="tel:+7 (495) 981-57-10").footer-phone +7 (495) 981-57-10
+			a(href="mailto:info@itexpert.ru").footer-mail info@itexpert.ru
+			.soc-row
+				a(href="https://www.facebook.com/itexpert.ru?fref=ts").soc-row__el
+					+icon("soc-facebook","icon")
+				a(href="https://www.instagram.com/itexpert.ru/").soc-row__el
+					+icon("soc-instagram","icon")
+				a(href="https://www.youtube.com/ITEXPERTRU/").soc-row__el
+					+icon("soc-youtube","icon")
+			a(href="https://www.itexpert.ru/").footer-logo www.itexpert.ru
+
+.modal-layer
+	.modal-filter
+	.modal-wrap
+		//success message
+		.modal(data-modal="trueMsg")
+			.modal-content.modal-content--true
+				.modal-close
+					+icon("close-fat","icon")
+				img(src="img/email.svg", alt="")
+				.modal-title Thank you for your request
+				.modal-text-true Your message has been sent, we will contact you shortly.
+
+include ./block_html/_script.pug

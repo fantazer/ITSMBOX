@@ -367,6 +367,7 @@ body
 	width: 50%
 	opacity: .8
 	font-weight: 700
+	margin 0 20px 0 auto
 .nav__el
 	color $dark
 	tr()
@@ -635,6 +636,8 @@ body
 	margin-bottom: 40px
 
 .payment
+	max-width 768px
+	margin: 0 auto
 	f()
 	fw()
 	justify-content space-between
@@ -646,7 +649,7 @@ body
 	+below(640px)
 		width: 100%
 		padding: 30px
-	width: 30%
+	width: 46%
 	background: white
 	padding: 80px 30px
 	flex(mid)
@@ -948,6 +951,7 @@ body
 	+below(640px)
 		width: 100%
 		padding: 20px
+		margin-bottom: 0
 	margin-bottom: 20px
 	br(30px)
 	width: 350px
@@ -973,34 +977,50 @@ body
 		width: 100%
 .platform-logo__sub--sale
 	margin-left 3%
+
+
+.platform-logo-wrap
+	+below(640px)
+		width: 100%
+		margin: 20px 0
+	padding: 30px 20px
+	border 1px solid $border-color
+	br(10px)
+	width: 50%
+	flex(mid)
+	fl()
+	margin: 30px 0 60px 0
+
 .platform-logo__add
 	+below(640px)
 		width: 100%
 		min-width auto
 	min-width 320px
 	width: 40%
-	margin-top: 20px
-	margin-left: 3%
-	margin-bottom: 40px
+	margin-bottom: 20px
+	img
+		margin-left: 5%
+	span
+		text-align center
+		display block
+		margin-top: 20px
 .platform-logo__row
 	+below(640px)
 		flex(around)
 		width: 100%
 		fl()
-		margin: 0 0 40px 0
 	flex(mid)
-	margin: 40px 0 100px 0
 	width: 100%
 .platform-logo__item
 	+below(640px)
 		width: 80%
 		margin 20px 0
-	width: 20%
+	width: 40%
 	margin: 0 30px
 .platform-logo__item--sm
 	+below(640px)
 		width: 80%
-	width: 16%
+	width: 36%
 
 .platform-advant
 	+below(640px)
@@ -1225,3 +1245,20 @@ body
 			+below(640px)
 				display inline-block
 				width calc(100% - 80px)
+
+.lang
+	+below(1024px)
+		margin 0 10px 0 auto
+	f()
+
+.lang__el
+	width: 40px
+	margin-left 10px
+	padding: 1px 5px
+	tr()
+	br(5px)
+	&:hover
+		background: #8abbf3
+
+.lang__el--active
+	background: #8abbf3
